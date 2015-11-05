@@ -61,3 +61,35 @@ playbuy.controller('playbuyCtrl', function($scope, $http) {
 
 
 });
+
+
+playbuy.controller('zalCtrl', function($scope) {
+
+
+  $scope.selectSeat = function(){
+
+    document.getElementById('paths').onclick=function fn(e){
+      e = e || event
+      var target = e.target || e.srcElement
+      tgid = target.id
+      tgcl = target.classList
+      console.log(tgid)
+      document.getElementById(tgid).classList.remove('st4', 'st2');
+      document.getElementById(tgid).classList.add('st0')
+    }
+
+    // if (tgcl == 'st2') {
+    //   document.getElementById(tgid).classList.remove('st0', 'st1', 'st2');
+    //   document.getElementById(tgid).classList.add('st0')
+    // }
+    // else {
+    //   console.log('Место занято!')
+    // }
+
+
+
+
+  };
+
+
+});

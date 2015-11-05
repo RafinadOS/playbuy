@@ -511,6 +511,9 @@ html, body {
 	vertical-align: top;
 	line-height: 90px;
 }
+.zal {
+	clear: both;
+}
 @media (max-width: 460px) {
 	.pb-film_info-left {
 		width: 67%;

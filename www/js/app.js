@@ -40,9 +40,7 @@ var playbuy = angular.module('playbuy', ['ionic'])
             .state('changeseat', {
                 url: '/changeseat',
                 templateUrl: 'templates/changeseat.html',
-                controller: 'playbuyCtrl'
+                controller: 'zalCtrl'
             })
         $urlRouterProvider.otherwise('/repertuar');
     });
-
-
